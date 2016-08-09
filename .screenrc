@@ -6,3 +6,10 @@ defscrollback 32000
 
 # Always start `screen` with UTF-8 enabled (`screen -U`)
 defutf8 on
+
+# tab-completion flash in heading bar
+vbell off
+
+# Status bar
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
