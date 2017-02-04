@@ -1,8 +1,29 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
 root = true
 
+# Windows newlines with a newline ending every file
 [*]
-charset = utf-8
-indent_style = tab
 end_of_line = lf
-insert_final_newline = true
+charset = utf-8
+insert_final_newline = false
 trim_trailing_whitespace = true
+
+# Unix-style newlines for bash scripts
+[*.sh]
+end_of_line = lf
+
+# 2 Space indentation for code
+[*.{js,ts,go}]
+indent_style = space
+indent_size = 2
+
+# 2 Space indentation for config
+[*.{json,yaml}]
+indent_style = space
+indent_size = 2
+
+# Keep trailing whitespace
+[*.md]
+trim_trailing_whitespace = false
